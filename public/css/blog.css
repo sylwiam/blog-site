@@ -1,0 +1,7 @@
+#guestbook {
+	margin: 2em 0;
+}
+.error {
+	font-weight: bold;
+	color: red
+}

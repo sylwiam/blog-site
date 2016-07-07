@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Models\Comment;
+use Input;
 
 class CommentController extends Controller {
 
@@ -9,32 +10,21 @@ class CommentController extends Controller {
 		\Log::info('BlogController::getData ');
 		$result = Comment::all();
 		\Log::info($result);
+		// $this->create();
 
 		return $result;
 	}
 
 	public function create() {
-		$data = array('name' => 'some title 3', 'message' => 'some message 3');
+		$data = array();
+
+        $data['author'] = Input::get('author');
+        $data['comment'] = Input::get('comment');
 
 		$message = new Comment;
 		$message->fill($data);
-	
-	
-		try {
-			$result = $message->save();
-		} catch (Exception $e) {
-			$response['error'] = $e->getMessage();
-			$response['data'] = $data;
-			return Response::json($response, 200);
-		}
 		
-		if ($result) {
-			$response['success'] = true;
-			return Response::json($response,200);
-		} else {
-			$response['error'] = 'Comment was not saved sucessfully.';
-			return Response::json($response,400);
-		}
+		$result = $message->save();
 	}
 }
 

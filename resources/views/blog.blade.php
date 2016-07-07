@@ -15,19 +15,19 @@
     <body>
         <div id="guestbook" class="container">
             <h1>@{{ name2 }}</h1>
-            <form method="POST" v-on="submit: addMessage">
+            <form method="POST" v-on="submit: addComment">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="form-group">
-                    <label for="name">Name:
-                        <span class="error" v-if="! newMessage.name">*</span>
+                    <label for="author">Name:
+                        <span class="error" v-if="! newMessage.author">*</span>
                     </label>
-                    <input type="text" name="name" id="name" class="form-control" v-model="newMessage.name">
+                    <input type="text" name="author" id="author" class="form-control" v-model="newMessage.author">
                 </div>
                 <div class="form-group">
-                    <label for="message">Comment:
-                        <span class="error" v-if="! newMessage.message">*</span>
+                    <label for="comment">Comment:
+                        <span class="error" v-if="! newMessage.comment">*</span>
                     </label>
-                    <textarea type="text" name="message" id="message" class="form-control" v-model="newMessage.message"></textarea>
+                    <textarea type="text" name="comment" id="comment" class="form-control" v-model="newMessage.comment"></textarea>
                 </div>
                 <div class="form-group" v-if="! submitted">
                     <button type="submit" class="btn btn-primary" v-attr="disabled: formNotFilled">Add Message</button>
@@ -35,10 +35,10 @@
                 <div class="alert alert-success" v-if="submitted">Thanks!</div>
             </form>
             <hr>
-            <article  v-repeat="messages">
-                <h3>@{{ name }}</h3>
+            <article v-repeat="messages | orderBy comment false">
+                <h3>@{{ author }}</h3>
                 <div class="body">
-                        @{{ message }}
+                    @{{ comment }}
                 </div>
             </article>
         </div>

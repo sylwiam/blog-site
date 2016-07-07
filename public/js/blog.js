@@ -5,7 +5,7 @@ new Vue({
 	el: '#guestbook',
 	data: {
 		name2: 'Test',
-		newMessage: { name: '', message: ''},
+		newMessage: { author: '', comment: ''},
 		formNotFilled: false,
 		submitted: false
 	},
@@ -13,8 +13,8 @@ new Vue({
         console.log('vueModel is ready');           
         this.fetchMessages();
 
-     //    console.log('after fetchMessages');
-    	// console.log(this.messages);
+        console.log('after fetchMessages');
+    	console.log(this.messages);
     },
 	// filters: {
 	// 	orderBy: function(){
@@ -62,12 +62,12 @@ new Vue({
             this.$set('messages', temp);
 
         },
-        addMessage: function(e) {
+        addComment: function(e) {
         	e.preventDefault();
         	this.messages.push(this.newMessage);
         	inputData = this.newMessage;
         	$.ajax({
-		        url: 'pi/messages/create',
+		        url: 'api/messages/create',
 		        inputData,
 		        type: 'post',
 		        async: false,
@@ -77,20 +77,11 @@ new Vue({
             		temp = responseData;
 		        }
 			});
-        	this.newMessage = { name: '', message: ''};
+        	this.newMessage = { author: '', comment: ''};
 
         	this.submitted = true;
         	
         }
-		// createNewMessage: function(e) {
-		// 	e.preventDefault();
-
-		// 	inputData = { name: 'my name', message: 'my message' };
-			
-		// 	this.$http.post('api/messages/create', inputData, function(response) {
-		// 		console.log(response);
-  //       	});
-		// }
 	}
 })
 

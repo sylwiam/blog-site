@@ -1,26 +1,25 @@
 <?php namespace App\Http\Controllers;
 
 use App\Models\Comment;
-use Input;
+use Illuminate\Http\Request;
 
 class CommentController extends Controller {
 
-
 	public function getData() {
-		\Log::info('BlogController::getData ');
 		$result = Comment::all();
-		\Log::info($result);
-		// $this->create();
 
 		return $result;
 	}
 
-	public function create() {
+	public function create(Request $request) {
 		$data = array();
+		
+		// \Log::info('all requests');
+		// \Log::info($request->all());
 
-        $data['author'] = Input::get('author');
-        $data['comment'] = Input::get('comment');
-
+        $data['author'] = $request->get('author');
+        $data['comment'] = $request->get('comment');
+                
 		$message = new Comment;
 		$message->fill($data);
 		

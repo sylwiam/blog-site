@@ -1,6 +1,3 @@
-
-// console.log('hello');
-// 
 new Vue({
 	el: '#guestbook',
 	data: {
@@ -16,11 +13,6 @@ new Vue({
         console.log('after fetchMessages');
     	console.log(this.messages);
     },
-	// filters: {
-	// 	orderBy: function(){
-
-	// 	}
-	// },
 	computed: {
 		formNotFilled: function() {
 			for (var key in this.newMessage) {
@@ -30,59 +22,40 @@ new Vue({
 		}
 	},
 	methods: {
-		// fetchMessages: function() {
-  //       	console.log('fetchMessages()');
-  //       	inputData = { name: 'my name', message: 'my message' };
-  //       	this.$http.get('api/messages', inputData, function(response) {
-  //       		console.log('response');
-  //       		console.log(response);
-  //       		this.$set('messages', response);
-  //       	});
-  //       	console.log('messages after');
-  //       	console.log(this.messages);
-		// }
 		fetchMessages: function () {
             console.log('fetchMessages');
-            // this.$http.get('api/messages', function (responseData) {
-            // 	console.log('responseData:');
-            // 	console.log(responseData);
-            //     temp = responseData;
-            // });
 
         	$.ajax({
 		        url: 'api/messages',
 		        type: 'get',
 		        async: false,
 		        success: function(responseData) {
-		        	// console.log('responseData:');
-           //  		console.log(responseData);
             		temp = responseData;
-		        }
+		        },
+		        error: function (request, status, error) {
+     			   	// alert(request.responseText);
+    			}
 			});
-            this.$set('messages', temp);
-
+			if (temp) this.$set('messages', temp);
         },
         addComment: function(e) {
         	e.preventDefault();
         	this.messages.push(this.newMessage);
         	inputData = this.newMessage;
+		    console.log('inputData:');
+            console.log(inputData);
         	$.ajax({
 		        url: 'api/messages/create',
-		        inputData,
 		        type: 'post',
+		        data: inputData,
 		        async: false,
 		        success: function(responseData) {
-		        	// console.log('responseData:');
-           //  		console.log(responseData);
             		temp = responseData;
 		        }
 			});
         	this.newMessage = { author: '', comment: ''};
 
         	this.submitted = true;
-        	
         }
 	}
 })
-
-// console.log('bye2');

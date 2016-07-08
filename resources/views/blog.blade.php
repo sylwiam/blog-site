@@ -2,14 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Blog</title>
         <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script> 
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="{!! asset('css/blog.css') !!}" type="text/css">
         <script type="text/javascript"  src="{{ URL::asset('/vendor/vue/vue.min.js') }}"></script>
         <script type="text/javascript"  src="{{ URL::asset('/vendor/vue/vue-resource.min.js') }}"></script>
-        <meta name="csrf-token" content="{{ csrf_token() }}" />
+        <meta name="csrf-token" id="csrf-token" content="{{ csrf_token() }}" />
     </head>
 
     <body>
@@ -43,13 +42,5 @@
             </article>
         </div>
     </body>
-
-    <script type="text/javascript">
-       $.ajaxSetup({
-           headers: {
-               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-           }
-       });
-    </script>
     <script type="text/javascript"  src="{{ URL::asset('js/blog.js') }}"></script>
 </html>

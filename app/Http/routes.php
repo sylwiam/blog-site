@@ -11,3 +11,7 @@ Route::get('api/messages', array('as' => 'messages-get-all', 'uses' => 'CommentC
 // });
 
 Route::post('api/messages/create', array('as' => 'messages-create', 'uses' => 'CommentController@create'));
+
+Route::get('home-new', function() {
+	return view('home-new');
+});

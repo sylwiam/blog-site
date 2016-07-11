@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>YOUR NAME</title>
+    <title>Sylwia Decowski</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +35,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <img class="profile-image img-responsive pull-left" src="{!! asset('images/sylwia-decowski-bw.jpg') !!}" alt="Sylwia Decowski" />
+            <img class="profile-image img-responsive pull-left" src="{!! asset('images/sylwia-decowski.jpg') !!}" alt="Sylwia Decowski" />
             <div class="profile-content pull-left">
                 <h1 class="name">Sylwia Decowski</h1>
                 <h2 class="desc">Software Engineer</h2>

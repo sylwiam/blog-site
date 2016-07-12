@@ -21,6 +21,12 @@
 
     <link rel="stylesheet" href="{!! asset('css/blog.css') !!}" type="text/css">
     <script type="text/javascript"  src="{{ URL::asset('/vendor/vue/vue.min.js') }}"></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+    />
 </head>
 
 <body>
@@ -38,6 +44,9 @@
         </div><!--//container-->
     </header><!--//header-->
 
+    <!-- Prepare a container for your calendar. -->
+
+
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-md-8 col-sm-12 col-xs-12">
@@ -47,16 +56,19 @@
                 <section class="latest section">
                     @include('projects')
                 </section><!--//section-->
+                <section class="github-calendar section">
+                    <div class="section-inner">
+                        <h2 class="heading">GitHub contributions calendar</h2>
+                        <div class="content">
+                            <div id="github-calendar" class="calendar">
+                                Loading GitHub contributions data...
+                            </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
                 <section class="experience section">
                     @include('work')
                 </section><!--//section-->
-               <!--  <section class="github section">
-                    <div class="section-inner">
-                        <h2 class="heading">My GitHub GRAPH</h2>
-                        <div id="github-graph" class="github-graph">
-                        </div>
-                    </div>
-                </section> -->
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
                 @include('side-boxes')
@@ -75,5 +87,12 @@
     <!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
     <!-- custom js -->
     <script type="text/javascript" src="{{ URL::asset('/js/main.js') }}"></script>
+
+
+    <script  type="text/javascript" src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+
+    <script type="text/javascript" >
+        new GitHubCalendar(".calendar", "sylwiam");
+    </script>
 </body>
 </html>

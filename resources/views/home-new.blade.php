@@ -15,35 +15,27 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    
     <!-- Main CSS -->
     <link rel="stylesheet" href="{!! asset('css/style.css') !!}" type="text/css">
-    <link rel="stylesheet" href="{!! asset('css/style.css') !!}" type="text/css">
-    <!-- Theme CSS -->
-    <!-- <link id="theme-style" rel="stylesheet" href="assets/css/style.css"> -->
-    <link id="theme-style" rel="stylesheet" href="http://green.benchmarkeducation.ny/~smichon/laravel/site/assets/css/style.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
     <link rel="stylesheet" href="{!! asset('css/blog.css') !!}" type="text/css">
     <script type="text/javascript"  src="{{ URL::asset('/vendor/vue/vue.min.js') }}"></script>
+
+
 
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <img class="profile-image img-responsive pull-left" src="{!! asset('images/sylwia-decowski.jpg') !!}" alt="Sylwia Decowski" />
+            <img class="profile-image img-responsive pull-left" src="{!! asset('images/sylwia-decowski.jpg') !!}" alt="Sylwia Decowski" />            
             <div class="profile-content pull-left">
                 <h1 class="name">Sylwia Decowski</h1>
                 <h2 class="desc">Software Engineer</h2>
                 <ul class="social list-inline">
                   <li><a href="https://www.linkedin.com/in/sylwiam"><i class="fa fa-linkedin"></i></a></li>
                   <li><a href="https://github.com/sylwiam"><i class="fa fa-github"></i></a></li>
-                  <!-- <li><a href="#"><i class="fa fa-tumblr"></i></a></li> -->
-                  <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
                 </ul>
             </div><!--//profile-->
         </div><!--//container-->
@@ -56,7 +48,9 @@
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>@ToDo - add text</p>
+                            <p>Building software means to provide tools for everyone. I enjoy creating software that helps people in one way or another.</p>
+                            <p>I always liked science, math, and technical things as a kid, but I didn't get into software engineering until I was in college. After seeing how much I enjoyed it, I decided to major in computer science and earned an undergraduate degree from Saint John’s University. After getting my bachelors degree, I went to work for a rapidly growing and fast paced NYC tech startup. There, I worked on everything from XML and data transfer, to DOM manipulation and web development. Then, I moved on to work for a publishing company which provides literacy programs for kids, where I started as a web developer working on a Magento e-commerce site. After quickly mastering object-oriented programming concepts, modern software tools and frameworks, I joined an internal tools team as a software engineer. </p>
+                            <p>Now, I build software that helps with production of electronic eBooks and publishing them to an online platform where eBooks can be viewed and used in classrooms by students and teachers all around the country. I work mostly in Python, PHP and JavaScript. Check out my portfolio and perhaps we can work together soon.</p>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </section><!--//section-->
@@ -128,7 +122,7 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </section><!--//section-->
-                <section class="github section">
+               <!--  <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub GRAPH</h2>
 
@@ -139,7 +133,7 @@
 
 
                     </div>
-                </section>
+                </section> -->
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
                  <aside class="info aside section">
@@ -148,8 +142,8 @@
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Ossining, NY</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span>sylwiadecowski@gmail.com</li>
-                                <li><i class="fa fa-file-text-o"></i><span class="sr-only">Resume:</span><a href="#">Resume</a></li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span>sylwiadecowski@gmail.com</li>    
+                                <li><i class="fa fa-file-text-o"></i><span class="sr-only">Resume:</span><a href="{!! asset('pdf/Sylwia_Decowski_resume.pdf') !!}" target="_blank">Resume</a></li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -264,28 +258,12 @@
                     </div>
                 </aside>
 
-                <!-- <aside class="list music aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Favorite Coding Music</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=unCVi4hYRlY">Amélie Soundtrack</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="https://soundcloud.com/platform/maceo-plex-boiler-room">Maceo Plex</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="https://soundcloud.com/muramasamusic/sets/someday-somewhere-ep">Mura Masa</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="https://soundcloud.com/thechuckmeista/sets/nujabes">Nujabes</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </aside> -->
-
-
             </div><!--//secondary-->
         </div><!--//row-->
     </div><!--//masonry-->
 
     <footer class="footer">
         <div class="container text-center">
-                <!-- <small class="copyright">Designed by <a href="#" target="_blank">YOUR NEMA HERE</a></small> -->
         </div><!--//container-->
     </footer><!--//footer-->
 

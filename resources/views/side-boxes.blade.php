@@ -109,11 +109,19 @@
             <ul class="list-unstyled">
                 <li class="item">
                     <span class="title"><strong>English:</strong></span>
-                    <span class="level">Bilingual Proficiency <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                    <span class="level">Bilingual Proficiency <br class="visible-xs"/>
+                        <span class="stars">
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                        </span>
+                    </span>
                 </li>
                 <li class="item">
                     <span class="title"><strong>Polish:</strong></span>
-                    <span class="level">Native Speaker <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                    <span class="level">Native Speaker <br class="visible-sm visible-xs"/>
+                        <span class="stars">
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                        </span>
+                    </span>
                 </li>
             </ul>
         </div>

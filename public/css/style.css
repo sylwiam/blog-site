@@ -460,6 +460,9 @@ iframe {
 .languages .item .fa {
   color: #79d19a;
 }
+.languages .stars {
+  overflow: hidden; white-space: nowrap;
+}
 /* Blog Section */
 .blog .item {
   margin-bottom: 30px;

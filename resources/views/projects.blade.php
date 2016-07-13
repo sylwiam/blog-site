@@ -14,8 +14,8 @@
                 </div>
             </div>
             <div class="desc text-left">
-                <p>Refactored and redesigned version of a my personal website.</p>
-                <p>More description.</p>
+                <p>Refactored and redesigned version of a my personal website. I coded it to provide a great experience on any device.</p>
+                <p>The website prodives information about my background, my work experience and portfolio.</p>
                 <p></p>
             </div><!--//desc-->
             <a class="btn btn-cta-secondary" href="https://github.com/sylwiam/blog-site" target="_blank"><i class="fa fa-github-alt"></i>Repository</a>

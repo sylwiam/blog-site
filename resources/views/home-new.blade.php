@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
-    <meta name="author" content="Author name here">
+    <meta name="description" content="Responsive Website with resume and portfolio for Sylwia Decowski">
+    <meta name="author" content="Sylwia Decowski">
     <link rel='shortcut icon' type='image/x-icon' href="{!! asset('images/favicon.ico') !!}"/>
 
     <!-- Font Awesome CSS -->
@@ -56,11 +56,11 @@
                 <section class="latest section">
                     @include('projects')
                 </section><!--//section-->
-                <section class="github-calendar section">
+                <section class="section">
                     <div class="section-inner">
                         <h2 class="heading">GitHub contributions calendar</h2>
-                        <div class="content">
-                            <div id="github-calendar" class="calendar">
+                        <div class="content github-container">
+                            <div class="calendar" style="">
                                 Loading GitHub contributions data...
                             </div>
                         </div><!--//content-->

@@ -4,7 +4,7 @@
 
         <div class="item featured text-center">
             <h3 class="title"><a href="#" target="_blank">sylwiamichon.com</a></h3>
-            <p class="summary">A responsive website built on top of Laravel PHP Framework.</p>
+            <p class="summary">Responsive website built on top of Laravel PHP Framework.</p>
             <div class="featured-image">
                 <a href="#" target="_blank">
                 <img class="img-responsive project-image" src="" alt="feature project wide image here" />

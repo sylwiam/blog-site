@@ -32,7 +32,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <img class="profile-image img-responsive pull-left" src="{!! asset('images/sylwia-decowski.jpg') !!}" alt="Sylwia Decowski" />            
+            <img class="profile-image img-responsive pull-left" src="{!! asset('images/sylwia-decowski.jpg') !!}" alt="Sylwia Decowski" />       
             <div class="profile-content pull-left">
                 <h1 class="name">Sylwia Decowski</h1>
                 <h2 class="desc">Software Engineer</h2>

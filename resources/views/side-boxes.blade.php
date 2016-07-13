@@ -66,7 +66,7 @@
                     </div><!--//level-bar-->
                 </div><!--//item-->
                 <div class="item">
-                    <h3 class="level-title">MySQL, PostgreSQL
+                    <h3 class="level-title">MySQL &amp; PostgreSQL
                       <span class="level-label">Intermediate</span>
                     </h3>
                     <div class="level-bar">

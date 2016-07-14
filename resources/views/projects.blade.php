@@ -6,8 +6,8 @@
             <h3 class="title"><a href="#" target="_blank">sylwiamichon.com</a></h3>
             <p class="summary">Responsive website built on top of Laravel PHP Framework.</p>
             <div class="featured-image">
-                <a href="#" target="_blank">
-                <img class="img-responsive sylwiamichoncom" src="{!! asset('images/project-featured.png') !!}" alt="sylwiamichon.com" />
+                <a href="#" class="image-modal">
+                    <img class="img-responsive sylwiamichoncom" src="{!! asset('images/project-featured.png') !!}" alt="sylwiamichon.com" />
                 </a>
                 <div class="ribbon">
                     <div class="text"></div>
@@ -22,8 +22,8 @@
         </div><!--//item-->
         <hr class="divider" />
         <div class="item row">
-            <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/sylwiam" target="_blank">
-            <img class="img-responsive project-image" src="{!! asset('images/tasks-app.png') !!}" alt="square project image here" />
+            <a href="#" class="col-md-4 col-sm-4 col-xs-12 image-modal">
+                <img class="img-responsive project-image" src="{!! asset('images/tasks-app.png') !!}" alt="square project image here" />
             </a>
             <div class="desc col-md-8 col-sm-8 col-xs-12">
                 <h3 class="title"><a href="https://github.com/sylwiam" target="_blank">Task Manager</a></h3>

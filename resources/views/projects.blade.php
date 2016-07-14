@@ -15,7 +15,7 @@
             </div>
             <div class="desc text-left">
                 <p>Refactored and redesigned version of a my personal website. I coded it to provide a great experience on any device.</p>
-                <p>The website prodives information about my background,    my work experience and portfolio.</p>
+                <p>The website prodives information about my background, skills, work experience and latest project I'm working on.</p>
                 <p></p>
             </div><!--//desc-->
             <a class="btn btn-cta-secondary" href="https://github.com/sylwiam/blog-site" target="_blank"><i class="fa fa-github-alt"></i>Repository</a>
@@ -23,25 +23,12 @@
         <hr class="divider" />
         <div class="item row">
             <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/sylwiam" target="_blank">
-            <img class="img-responsive project-image" src="" alt="square project image here" />
+            <img class="img-responsive project-image" src="{!! asset('images/tasks-app.png') !!}" alt="square project image here" />
             </a>
             <div class="desc col-md-8 col-sm-8 col-xs-12">
-                <h3 class="title"><a href="https://github.com/sylwiam" target="_blank">Project Name</a></h3>
-                <p>Project description.</p>
-                <p>More description.</p>
-                <p><a class="more-link" href="https://github.com/sylwiam" target="_blank"><i class="fa fa-github-square"></i>Code</a></p>
-            </div><!--//desc-->
-        </div><!--//item-->
-
-        <div class="item row">
-            <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/sylwiam" target="_blank">
-            <img class="img-responsive project-image" src="" alt="square project image here" />
-            </a>
-            <div class="desc col-md-8 col-sm-8 col-xs-12">
-                <h3 class="title"><a href="https://github.com/sylwiam" target="_blank">Project Name</a></h3>
-                <p>Project description.</p>
-                <p>More description.</p>
-                <p><a class="more-link" href="https://github.com/sylwiam" target="_blank"><i class="fa fa-github-square"></i>Code</a></p>
+                <h3 class="title"><a href="https://github.com/sylwiam" target="_blank">Task Manager</a></h3>
+                <p>An app built with Vue.js that keeps track of tasks that need to be done. You can mark tasks comeplete, delete completed tasks or complete all tasks at once. </p>
+                <p><a class="more-link" href="https://github.com/sylwiam/vue-playground" target="_blank"><i class="fa fa-github-square"></i>Code</a></p>
             </div><!--//desc-->
         </div><!--//item-->
     </div><!--//content-->

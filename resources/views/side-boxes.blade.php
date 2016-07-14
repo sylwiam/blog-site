@@ -66,6 +66,15 @@
                     </div><!--//level-bar-->
                 </div><!--//item-->
                 <div class="item">
+                    <h3 class="level-title">RabbitMQ
+                      <span class="level-label">Advanced</span>
+                    </h3>
+                    <div class="level-bar">
+                        <div class="level-bar-inner" data-level="80%">
+                        </div>
+                    </div><!--//level-bar-->
+                </div><!--//item-->
+                <div class="item">
                     <h3 class="level-title">MySQL &amp; PostgreSQL
                       <span class="level-label">Intermediate</span>
                     </h3>
@@ -76,6 +85,24 @@
                 </div><!--//item-->
                 <div class="item">
                     <h3 class="level-title">MongoDB
+                      <span class="level-label">Intermediate</span>
+                    </h3>
+                    <div class="level-bar">
+                        <div class="level-bar-inner" data-level="60%">
+                        </div>
+                    </div><!--//level-bar-->
+                </div><!--//item-->
+                <div class="item">
+                    <h3 class="level-title">Amazon Web Services
+                      <span class="level-label">Intermediate</span>
+                    </h3>
+                    <div class="level-bar">
+                        <div class="level-bar-inner" data-level="60%">
+                        </div>
+                    </div><!--//level-bar-->
+                </div><!--//item-->
+                <div class="item">
+                    <h3 class="level-title">Redis
                       <span class="level-label">Intermediate</span>
                     </h3>
                     <div class="level-bar">

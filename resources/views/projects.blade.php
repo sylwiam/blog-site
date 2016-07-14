@@ -7,7 +7,7 @@
             <p class="summary">Responsive website built on top of Laravel PHP Framework.</p>
             <div class="featured-image">
                 <a href="#" target="_blank">
-                <img class="img-responsive project-image" src="" alt="feature project wide image here" />
+                <img class="img-responsive sylwiamichoncom" src="{!! asset('images/project-featured.png') !!}" alt="sylwiamichon.com" />
                 </a>
                 <div class="ribbon">
                     <div class="text"></div>
@@ -15,7 +15,7 @@
             </div>
             <div class="desc text-left">
                 <p>Refactored and redesigned version of a my personal website. I coded it to provide a great experience on any device.</p>
-                <p>The website prodives information about my background, my work experience and portfolio.</p>
+                <p>The website prodives information about my background,    my work experience and portfolio.</p>
                 <p></p>
             </div><!--//desc-->
             <a class="btn btn-cta-secondary" href="https://github.com/sylwiam/blog-site" target="_blank"><i class="fa fa-github-alt"></i>Repository</a>

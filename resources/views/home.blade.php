@@ -39,6 +39,7 @@
                 <ul class="social list-inline">
                   <li><a href="https://www.linkedin.com/in/sylwiam"><i class="fa fa-linkedin"></i></a></li>
                   <li><a href="https://github.com/sylwiam"><i class="fa fa-github"></i></a></li>
+                  <li><a href="https://www.pinterest.com/sylwiadecowski/"><i class="fa fa-pinterest"></i></a></li>
                 </ul>
             </div><!--//profile-->
         </div><!--//container-->

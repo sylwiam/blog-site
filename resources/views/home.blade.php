@@ -79,6 +79,7 @@
 
     <footer class="footer">
         <div class="container text-center">
+            <p>This website was designed and developed by Sylwia Decowski.</p>
         </div><!--//container-->
     </footer><!--//footer-->
 

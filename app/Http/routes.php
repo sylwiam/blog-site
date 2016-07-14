@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function() {
-	return view('blog');
+	return view('home');
 });
 
 Route::get('api/messages', array('as' => 'messages-get-all', 'uses' => 'CommentController@getData'));
@@ -12,6 +12,6 @@ Route::get('api/messages', array('as' => 'messages-get-all', 'uses' => 'CommentC
 
 Route::post('api/messages/create', array('as' => 'messages-create', 'uses' => 'CommentController@create'));
 
-Route::get('home-new', function() {
-	return view('home-new');
+Route::get('blog', function() {
+	return view('blog');
 });

@@ -86,15 +86,22 @@
     <!-- jQuery --> 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
-    <!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="{{ URL::asset('/js/main.js') }}"></script>
-
-
     <script  type="text/javascript" src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 
     <script type="text/javascript" >
         new GitHubCalendar(".calendar", "sylwiam");
+
+        $(function() {
+            $('.image-modal').on('click', function() {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#imagemodal').modal('show');   
+            });     
+        });
     </script>
+
+    @include('image-modal')
 </body>
 </html>
